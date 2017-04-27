@@ -1,0 +1,1 @@
+<textarea id="{$id}" name="{$name}" cols="55" rows="8" class="cm-wysiwyg input-large {$class}" {if $disable_input}disabled="disabled"{/if}>{$data}</textarea>
