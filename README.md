@@ -20,13 +20,13 @@ Copy this file to `/var/themes_repository/basic/templates/common` in order to ma
 Now to add the field type so we can set in addon.xml. Edit `/app/Tygh/Addons/AXmlScheme.php` and find the `_getTypes()` function. Add an array item (hardcoded):
 
 ```
-'wysiwyg' => 'U'
+'wysiwyg' => 'J'
 ```
 
 To apply that, we can a conditional into `design/backend/templates/common/settings_fields.tpl`. This file is included in a loop, so settings for each are $item. Before `{elseif $item.type == "K"}` add the following (hardcoded):
 
 ```
-{elseif $item.type == "U"}
+{elseif $item.type == "J"}
     <div class="control-group">
       {include file="common/wysiwyg.tpl" id="addon_option_{$item.section_name}_{$item.name}" name="addon_data[options][{$item.object_id}]" data="{$item.value nofilter}" class="{$item.section_name}_{$item.name}"}
     </div>
