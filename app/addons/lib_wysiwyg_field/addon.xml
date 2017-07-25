@@ -1,19 +1,24 @@
 <?xml version="1.0"?>
 <addon scheme="2.0" edition_type="ROOT,ULT:VENDOR">
-    <id>lib_wysiwyg_field</id>
-    <version>1.1</version>
-	<default_language>en</default_language>
+	<id>lib_wysiwyg_field</id>
+	<version>1.1.0</version>
 	<name>Library - WYSIWYG Field</name>
 	<description>DEPENDENCY ADDON: Adds a field type "wysiwyg" for addon.xml and /common/wysiwyg.tpl for includes.</description>
-    <priority>1000000</priority>
-    <position>0</position>
+	<priority>1000000</priority>
+	<position>0</position>
 	<status>active</status>
-    <default_language>en</default_language>
-    <authors>
-        <author>
-            <name>Dhaupin - CreadevDotOrg</name>
-            <email>dhaupin@creadev.org</email>
-            <url>https://creadev.org</url>
-        </author>
-    </authors>
+	<default_language>en</default_language>
+	<compatibility>
+		<core_version>
+			<min>4.3.4</min>
+			<!-- Untested below v4.3.4 -->
+		</core_version>
+	</compatibility>
+	<authors>
+		<author>
+			<name>Dhaupin - CreadevDotOrg</name>
+			<email>dhaupin@creadev.org</email>
+			<url>https://creadev.org</url>
+		</author>
+	</authors>
 </addon>
